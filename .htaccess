@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^about$ about.html [NC]
+RewriteRule ^video$ video.html [NC]
+RewriteRule ^test$ test.html [NC]
+

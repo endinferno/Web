@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+		<title>
+			A Map
+		</title>
+		<link rel="stylesheet" href="./css/center.css" />
+		<link rel="stylesheet" href="./css/map.css" />
+	</head>
+	<body>
+		<div id="container"></div>
+		<div class="info">
+			<p>
+			</p>
+			<hr>
+			<p id='adcode'>
+			</p>
+		</div>
+		<button id="dbutton" class="delete-button" onclick="ChangeMarkerStatus(this);" >
+			删除标记
+		</button>
+		<div class="input-card">
+			<h4>左击获取经纬度：</h4>
+			<div class="input-item">
+				<input type="text" readonly="true" id="lnglat">
+			</div>
+		</div>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=b9bb5b1c87ad767e422c093dca35e068&plugin=AMap.Geocoder"></script>
+		<script type="text/javascript" src="./js/Marker.js"> </script>
+		<script type="text/javascript" src="./js/Map.js"> </script>
+		<script type="text/javascript" src="./js/Toolbar.js"></script>
+		<script type="text/javascript" src="./js/LaunchWithTheWebPage.js"></script>
+		<script type="text/javascript" src="./js/ProcessSql.js"> </script>
+	</body>
+</html>
